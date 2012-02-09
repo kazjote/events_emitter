@@ -15,10 +15,10 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "events_emitter"
-  gem.homepage = "http://github.com/kazjote/events_emitter"
+  gem.homepage = "http://github.com/sponsor_pay/events_emitter"
   gem.license = "MIT"
-  gem.summary = "Easy events submission"
-  gem.description = "Easy events submission"
+  gem.summary = "An easy way for emitting events to Graphite, Redis, Pixels..."
+  gem.description = "An easy way for emitting events to Graphite, Redis, Pixels..."
   gem.email = "kazjote@gmail.com"
   gem.authors = ["Kacper Bielecki"]
   # dependencies defined in Gemfile
