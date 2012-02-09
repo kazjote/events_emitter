@@ -2,8 +2,8 @@ require 'redis'
 require 'json'
 
 module EventsEmitter
-	class Redis
-		def storage
+  class Redis
+    def storage
       return @storage if @storage
 
       opts = {
@@ -12,12 +12,12 @@ module EventsEmitter
         :db   => self.class.config[:db]
       }
 
-			@storage = ::Redis.new(opts)
-		end
+      @storage = ::Redis.new(opts)
+    end
 
-		def record(key, value)
+    def record(key, value)
       storage.sadd(key, value.to_json)
-		end
+    end
 
     def get(key)
       storage.smembers(key).map do |e|
@@ -28,5 +28,5 @@ module EventsEmitter
     def self.config
       @config ||= { host: "127.0.0.1", port: 6379, db: 1 }
     end
-	end
+  end
 end
