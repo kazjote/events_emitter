@@ -8,14 +8,12 @@ GEM
       git (>= 1.2.5)
       rake
       rdoc
-    json (1.6.5)
     metaclass (0.0.1)
     mocha (0.10.3)
       metaclass (~> 0.0.1)
     multi_json (1.0.4)
     rake (0.9.2.2)
-    rdoc (3.12)
-      json (~> 1.4)
+    rdoc (6.3.1)
     redis (2.2.2)
     shoulda (2.11.3)
     simplecov (0.5.4)
@@ -31,7 +29,7 @@ DEPENDENCIES
   dalli
   jeweler (~> 1.8.3)
   mocha
-  rdoc (~> 3.12)
+  rdoc (~> 6.3)
   redis
   shoulda
   simplecov
