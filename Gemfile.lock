@@ -1,7 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    dalli (1.1.4)
+    dalli (3.2.3)
     git (1.2.5)
     jeweler (1.8.3)
       bundler (~> 1.0)
